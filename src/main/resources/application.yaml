@@ -11,3 +11,12 @@ spring:
 server:
   servlet:
     context-path: /sell
+
+
+wechat:
+  mpAppId:
+  mpAppSecret:
+  mchId:
+  mchKey:
+  keyPath:
+  notifyUrl: #异步通知支付
