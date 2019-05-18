@@ -14,9 +14,9 @@ server:
 
 
 wechat:
-  mpAppId:
-  mpAppSecret:
+  mpAppId: wxa09cadeeb91c6dce
+  mpAppSecret: 601b9c13b702e67a1a8e31d0e0ca4545
   mchId:
   mchKey:
   keyPath:
-  notifyUrl: #异步通知支付
+  notifyUrl: http://localhost/sell/pay/notify #异步通知支付

@@ -27,7 +27,7 @@ public class WeixinController {
     public String authorize(@RequestParam("returnUrl" )String returnUrl){
         //1.配置
         //2.调用方法
-        String url = "http://localhost/sell/wechat/userInfo";
+        String url = "http://sell.com/sell/wechat/userInfo";
         String redirect  = wxMpService.oauth2buildAuthorizationUrl(url,WxConsts.OAuth2Scope.SNSAPI_USERINFO, URLEncoder.encode(returnUrl));
         log.info("【微信网页授权】获取code，result={}",redirect);
 

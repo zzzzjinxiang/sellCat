@@ -17,15 +17,20 @@ import static org.junit.Assert.*;
 public class PayServiceImplTest {
 
 
-    private static final String s = "";
+    private static final String s = "11010323";
     @Autowired
     private PayService payService;
     @Autowired
     private OrderService orderService;
     @Test
     public void create() {
-
-        OrderDTO orderDTO = orderService.findOne(s);
+        OrderDTO orderDTO = orderService.findOne("155280234963772052");
         payService.create(orderDTO);
+    }
+
+    @Test
+    public void refund(){
+        OrderDTO orderDTO = orderService.findOne("155280234963772052");
+        payService.refund(orderDTO);
     }
 }
